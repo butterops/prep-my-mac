@@ -1,11 +1,9 @@
-<p align="center"><img src="./prepmymac.jpeg"></p>
+<p align="center"><img src="./prepmymac.jpeg"><i>Screenshot of PrepMyMac Mac app in dark and light ui themes.</i></p>
+
 
 # Prep My Mac
 
 Separate your project infrastructure from that of your Mac. Install a vagrant based VM with your dev tools in one click.
-
-### Screenshot
-
 
 ### Getting Started
 

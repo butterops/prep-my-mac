@@ -1,9 +1,9 @@
-import 'bulma-fluent/bulma.sass'
-import 'material-design-icons/iconfont/material-icons.css'
+// import 'bulma-fluent/bulma.sass'
+// import 'material-design-icons/iconfont/material-icons.css'
 import Vue from 'vue'
 import App from './App.vue'
-import './assets/style/animations.scss'
-import './assets/style/main.scss'
+// import './assets/style/animations.scss'
+// import './assets/style/main.scss'
 import router from './router/index'
 import store from './store/index'
 

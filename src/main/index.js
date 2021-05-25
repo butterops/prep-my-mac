@@ -50,11 +50,16 @@ function createWindow() {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     width: 960,
     height: 540,
     minWidth: 960,
     minHeight: 540,
+    frame: false,
+    // transparent: false,
+    // resizable: true,
+    // fullscreen: false,
+    titleBarStyle: 'hiddenInset',
     // useContentSize: true,
     webPreferences: {
       nodeIntegration: true,

@@ -6,6 +6,7 @@
   "dependencies": {
     "@electron/remote": "^1.1.0",
     "bulma-fluent": "^0.4.3",
+    "jquery": "^3.6.0",
     "material-design-icons": "^3.0.1",
     "vue": "^2.6.12",
     "vue-electron": "^1.0.6",
@@ -68,9 +69,9 @@
   },
   "license": "MIT",
   "main": "./dist/main.js",
-  "name": "vue-electron-template",
+  "name": "prep-my-mac",
   "private": true,
-  "productName": "Vue Electron Template",
+  "productName": "Prep My Mac",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mubaidr/vue-electron-template.git"

@@ -5,6 +5,8 @@
 
 Separate your project infrastructure from that of your Mac. Install a vagrant based VM with your dev tools in one click.
 
+> One click install, configure and manage automations for development in node, python & php through vagrant based IaC vm and app containers.
+
 ### Getting Started
 
 Clone this repository, install dependencies and run using either `dev`, `debug` or `build` command.

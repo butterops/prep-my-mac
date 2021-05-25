@@ -1,4 +1,4 @@
-<p align="center"><img src="./screenshot.png"></p>
+<p align="center"><img src="./prepmymac.jpeg"></p>
 
 # Prep My Mac
 

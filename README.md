@@ -2,9 +2,7 @@
 
 # Prep My Mac
 
-
-Template for building desktop applications using [Electronjs](https://electronjs.org) and [Vue.js](https://vuejs.org)
-
+Separate your project infrastructure from that of your Mac. Install a vagrant based VM with your dev tools in one click.
 
 ### Screenshot
 

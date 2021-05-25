@@ -11,10 +11,7 @@ Clone this repository, install dependencies and run using either `dev`, `debug` 
 
 ```bash
 # Clone this repository
-git clone https://github.com/mubaidr/vue-electron
-
 # change directory to cloned path
-cd vue-electron
 
 # Install dependencies
 npm install
@@ -40,8 +37,6 @@ npm run build
 #### Credits
 
 All credits to authors of packages and tools used in the project.
-
-\* This template is inspired by [electron-vue](https://github.com/SimulatedGREG/electron-vue)
 
 ## Contributors
 

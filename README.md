@@ -1,4 +1,4 @@
-<p align="center"><img src="./prepmymac.jpeg"><i>Screenshot of PrepMyMac Mac app in dark and light ui themes.</i></p>
+<p align="center"><img src="./prepmymac.png"><i>Screenshot of PrepMyMac desktop app</i></p>
 
 
 # Prep My Mac

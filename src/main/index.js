@@ -44,19 +44,19 @@ async function installDevTools() {
     console.log('Unable to install `vue-devtools`: \n', err)
   })
 }
-
 function createWindow() {
   /**
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    backgroundColor: '#000',
-    width: 960,
-    height: 540,
-    minWidth: 960,
-    minHeight: 540,
+    // backgroundColor: '#000',
+    width: 1050,
+    height: 760,
+    minWidth: 1050,
+    minHeight: 760,
     frame: false,
-    // transparent: false,
+    transparent: true,
+    vibrancy: "appearance-based",
     // resizable: true,
     // fullscreen: false,
     titleBarStyle: 'hiddenInset',
@@ -93,19 +93,23 @@ function createWindow() {
   mainWindow.on('closed', () => {
     console.log('\nApplication exiting...')
   })
+
 }
 
 app.on('ready', () => {
-  createWindow()
-
-  if (isDev) {
-    installDevTools()
-    mainWindow.webContents.openDevTools()
-  }
-
-  if (isDebug) {
-    mainWindow.webContents.openDevTools()
-  }
+  setTimeout(
+    ()=>{
+      createWindow()
+      if (isDev) {
+        installDevTools()
+        // mainWindow.webContents.openDevTools()
+      }
+      if (isDebug) {
+        mainWindow.webContents.openDevTools()
+      }
+    },
+    process.platform == "linux" ? 1000 : 0
+    ); 
 })
 
 app.on('window-all-closed', () => {

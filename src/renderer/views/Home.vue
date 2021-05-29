@@ -1,18 +1,5 @@
 <template>
-  <div id="wrapper">
-    <div class="dark-light">
-      <svg
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="1.5"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-      </svg>
-    </div>
-    <div class="app">
+  <div class="app">
       <div class="header">
         <div class="menu-circle"></div>
         <div class="header-menu">
@@ -471,7 +458,6 @@
         </div>
       </div>
       <div class="overlay-app"></div>
-    </div>
   </div>
 </template>
 
@@ -551,12 +537,6 @@ export default Vue.extend({
       $('.pop-up').removeClass('visible')
     })
 
-    let toggleButton = document.querySelector('.dark-light')
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode')
-    })
-
-
   }
 
 })
@@ -571,7 +551,7 @@ export default Vue.extend({
 }
 
 :root {
-  --theme-bg-color: rgba(16 18 27 / 40%);
+  --theme-bg-color: rgba(16 18 27 / 20%);
   --border-color: rgba(113 119 144 / 25%);
   --theme-color: #f9fafb;
   --inactive-color: rgb(113 119 144 / 78%);
@@ -588,21 +568,6 @@ export default Vue.extend({
   --scrollbar-bg: rgb(1 2 3 / 40%);
 }
 
-.light-mode {
-  --theme-bg-color: rgb(255 255 255 / 31%);
-  --theme-color: #3c3a3a;
-  --inactive-color: #333333;
-  --button-inactive: #3c3a3a;
-  --search-bg: rgb(255 255 255 / 31%);
-  --dropdown-bg: #f7f7f7;
-  --overlay-bg: rgb(255 255 255 / 30%);
-  --dropdown-hover: rgb(236 236 236);
-  --border-color: rgb(255 255 255 / 35%);
-  --popup-bg: rgb(255 255 255);
-  --hover-menu-bg: rgba(255 255 255 / 35%);
-  --scrollbar-bg: rgb(255 253 253 / 57%);
-  --content-title-color: --theme-color;
-}
 
 html {
   box-sizing: border-box;
@@ -611,8 +576,8 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-image: url(https://4kwallpapers.com/images/wallpapers/samsung-galaxy-s11-blue-stock-bubble-gradients-3040x3040-1705.jpg);
-  background-color: transparent;
+  // background-image: url(https://4kwallpapers.com/images/wallpapers/samsung-galaxy-s11-blue-stock-bubble-gradients-3040x3040-1705.jpg);
+  background-color: var(--theme-bg-color);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -630,59 +595,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-.dark-light {
-  position: fixed;
-  bottom: 50px;
-  right: 30px;
-  background-color: var(--dropdown-bg);
-  box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.2);
-  padding: 8px;
-  border-radius: 50%;
-  z-index: 3;
-  cursor: pointer;
-  svg {
-    width: 24px;
-    flex-shrink: 0;
-    fill: #ffce45;
-    stroke: #ffce45;
-    transition: 0.5s;
-  }
-}
-
-.light-mode {
-  .dark-light svg {
-    fill: transparent;
-    stroke: var(--theme-color);
-  }
-  .profile-img {
-    border: 2px solid var(--theme-bg-color);
-  }
-  .content-section ul {
-    background-color: var(--theme-bg-color);
-  }
-  .pop-up__title {
-    border-color: var(--theme-color);
-  }
-  .dropdown.is-active ul {
-    background-color: rgb(255 255 255 / 94%);
-  }
-}
-
-body.light-mode:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.72) 0%,
-    rgb(255 255 255 / 45%) 100%
-  );
-  backdrop-filter: saturate(3);
 }
 
 .app {
@@ -940,6 +852,7 @@ body.light-mode:before {
 }
 
 .main-container {
+  background-color: #282828;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
